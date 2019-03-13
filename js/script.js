@@ -16,6 +16,9 @@ $("#search-button").click(function(){
       
   });
   
+  $(".email-button").click(function () {
+    var email = $(".email-input").val();
+  });
   
   console.log(searchTerm);
   
