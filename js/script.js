@@ -16,9 +16,12 @@ $("#search-button").click(function(){
       
   });
   
-  $(".email-button").click(function () {
-    var email = $(".email-input").val();
+ $("#email-button").click(function () {
+     var email = $("#email-term").val();
+    window.open('mailto:'+email+'?subject=subject&body=body');
   });
+  
+  
   
   console.log(searchTerm);
   
