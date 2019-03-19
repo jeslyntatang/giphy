@@ -19,7 +19,7 @@ $("#search-button").click(function(){
   
  $("#email-button").click(function () {
      var email = $("#email-term").val();
-    window.open('mailto:'+email+'?subject=subject&body=body');
+    window.open('mailto:'+email+'?subject=Gif&body=body');
   });
   
   
