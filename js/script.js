@@ -10,7 +10,8 @@ $("#search-button").click(function(){
       url: "https://api.giphy.com/v1/gifs/search?q=" +searchTerm+ "&rating=pg&api_key=dc6zaTOxFJmzC",
       method: "GET",
       success: function(response) {
-          $("#display-gif").html(`<img src="${response.data[0].images.original.url}"/>`);
+          var num = Math.floor(Math.random() * response.data.length);
+          $("#display-gif").html(`<img src="${response.data[num].images.original.url}"/>`);
            $(".text-center").hide();
         }
       
